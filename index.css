@@ -1,6 +1,6 @@
 :root {
   /* Text-size styles */
-  --font-kanit: 'Kanit', serif;
+  --font-kanit: 'Kanit', sans-serif;
   --text-logo: 3rem;
   --text-placeholder: 1rem;
   --text-heading: 2rem;
