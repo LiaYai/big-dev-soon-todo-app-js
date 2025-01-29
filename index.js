@@ -62,9 +62,12 @@ function addTodoItem() {
 
   addButton.style.display = 'none';
   const todoItemElement = todoItemTemplateElement.cloneNode(true);
-  todoItemElement.querySelector('.todo-label').textContent = todoText;
+  const labelElement = todoItemElement.querySelector('.todo-label');
+  labelElement.textContent = todoText;
+  labelElement.htmlFor = `todo-${todoCount + 1}`;
   const deleteButtonElement = todoItemElement.querySelector('.todo-delete-button');
   const checkboxElement = todoItemElement.querySelector('.todo-checkbox');
+  checkboxElement.id = `todo-${todoCount + 1}`;
 
   todoListElement.append(todoItemElement);
   inputField.value = '';
