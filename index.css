@@ -60,7 +60,7 @@
 }
 
 .header {
-  background: url('./assets/background.jpg') no-repeat center center/cover;
+  background: url('assets/background.jpg') no-repeat center center/cover;
   background-color: var(--bg-primary);
   inline-size: 100%;
   block-size: 200px;
@@ -109,12 +109,12 @@
 
 .icon-moon {
   display: none;
-  background-image: url('./assets/icons/dark-mode.svg');
+  background-image: url('assets/icons/dark-mode.svg');
 }
 
 .icon-sun {
   display: block;
-  background-image: url('./assets/icons/light-mode.svg');
+  background-image: url('assets/icons/light-mode.svg');
 }
 
 .todo-container {
@@ -211,7 +211,7 @@
 
 .todo-checkbox:checked:before {
   content: '';
-  background-image: url('./assets/icons/check.svg');
+  background-image: url('assets/icons/check.svg');
   background-repeat: no-repeat;
   inline-size: 16px;
   block-size: 16px;
@@ -285,7 +285,7 @@
 }
 
 .icon-cactus {
-  background-image: url('./assets/icons/cactus.svg');
+  background-image: url('assets/icons/cactus.svg');
   filter: var(--svg-filter);
 }
 
