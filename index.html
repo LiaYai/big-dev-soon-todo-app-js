@@ -8,54 +8,55 @@
     <title>BigDevSoon - Todo App Project</title>
 
     <!-- Favicon for light theme -->
-    <link rel="icon" href="assets/icons/favicon-light.ico" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="assets/icons/sun.ico" media="(prefers-color-scheme: light)" />
     <!-- Favicon for dark theme -->
-    <link rel="icon" href="assets/icons/favicon-dark.ico" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/assets/icons/moon.ico" media="(prefers-color-scheme: dark)" />
   </head>
-  <body class="body">
-    <header class="header"></header>
-    <main class="main">
-      <div class="todo-header">
-        <h1 class="todo-title">TODO</h1>
-        <div class="todo-theme-switch">
-          <input type="checkbox" id="themeSwitch" />
-          <label for="themeSwitch" class="theme-switch-label">
-            <div class="icon-switch icon-sun"></div>
-            <div class="icon-switch icon-moon"></div>
-          </label>
+  <body>
+    <div class="body">
+      <header class="header"></header>
+      <main class="main">
+        <div class="todo-header">
+          <h1 class="todo-title">TODO</h1>
+          <div class="todo-theme-switch">
+            <input type="checkbox" id="themeSwitch" />
+            <label for="themeSwitch" class="theme-switch-label">
+              <div class="icon-switch icon-sun"></div>
+              <div class="icon-switch icon-moon"></div>
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="todo-container">
-        <div class="todo-input">
-          <input type="text" id="todoInput" placeholder="Create a new todo..." />
-          <button id="todoAddButton">Add todo</button>
+        <div class="todo-container">
+          <div class="todo-input">
+            <input type="text" id="todoInput" placeholder="Create a new todo..." />
+            <button id="todoAddButton">Add todo</button>
+          </div>
+          <div class="no-items">
+            <div class="icon icon-cactus"></div>
+            <h2 class="todo-empty-title">You’re todo’s are empty</h2>
+            <p class="todo-empty-message">Please add first one</p>
+          </div>
+          <ul id="todoList">
+            <!-- List of todos will be here -->
+          </ul>
+          <div class="todo-footer">
+            <span id="todoCounter">0/0 todos completed</span>
+          </div>
         </div>
-        <div class="no-items">
-          <div class="icon icon-cactus"></div>
-          <h2 class="todo-empty-title">You’re todo’s are empty</h2>
-          <p class="todo-empty-message">Please add first one</p>
-        </div>
-        <ul id="todoList">
-          <!-- List of todos will be here -->
-        </ul>
-        <div class="todo-footer">
-          <span id="todoCounter">0/0 todos completed</span>
-        </div>
-      </div>
-    </main>
-    <!-- Change the [ME] part to your own name/GitHub link -->
-    <footer class="footer test">
-      <a href="https://bigdevsoon.me" target="_blank" rel="noopener noreferrer"
-        >Project by BigDevSoon</a
-      >
-      |
-      <a
-        href="https://github.com/LiaYai/big-dev-soon-todo-app-js/tree/gh-pages"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Built with ❤️ by Alyssa</a
-      >
-    </footer>
+      </main>
+      <footer class="footer test">
+        <a href="https://bigdevsoon.me" target="_blank" rel="noopener noreferrer"
+          >Project by BigDevSoon</a
+        >
+        |
+        <a
+          href="https://github.com/LiaYai/big-dev-soon-todo-app-js/tree/gh-pages"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Built with ❤️ by Alyssa</a
+        >
+      </footer>
+    </div>
 
     <!-- Template for todo-item -->
     <template id="todoItemTemplate">
